@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  padding: 50px;
+  font-size: 20px;
+}
+.icon {
+  background-color: rgb(242, 82, 32);
+  color: white;
+  border-radius: 100px;
+  border: 1px solid rgb(242, 82, 32);
+}
+.btn {
+  margin: 0 0 20px 10px;
+  width: 100px;
+  background-color: rgb(242, 82, 32);
+  border-radius: 5px;
+  color: white;
+  border: 1px solid white;
+  margin-top: 20px;
+}
+.btn:hover {
+  margin: 0 0 20px 10px;
+  width: 100px;
+  background-color: rgb(244, 121, 84);
+  cursor: pointer;
+  color: black;
+  order: 1px solid white;
+  margin-top: 20px;
+}

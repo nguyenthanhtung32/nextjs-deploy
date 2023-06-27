@@ -1,0 +1,143 @@
+.header_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  height: 70px;
+}
+
+.logo {
+  height: 70px;
+}
+
+.left_nav_links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.right_nav_links {
+  display: flex;
+  align-items: center;
+}
+
+.right_nav_links div {
+  display: flex;
+  align-items: center;
+}
+
+.link {
+  font-size: 15px;
+  color: #222;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+.line {
+  margin: 0 10px;
+  color: rgb(89, 89, 89);
+}
+
+.search {
+  font-size: 25px;
+  color: #222;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-left: 5px;
+  transition: color 0.2s ease-in-out;
+}
+
+.link:hover,
+.search:hover {
+  color: #ee4d2d;
+}
+
+.cart_container {
+  font-size: 24px;
+  margin-left: 20px;
+}
+
+.cart_icon {
+  color: #222;
+  margin-right: 10px;
+  transition: color 0.2s ease-in-out;
+}
+
+.cart_icon:hover {
+  color: #ee4d2d;
+  cursor: pointer;
+}
+
+.home {
+  font-size: 15px;
+  color: black;
+  position: relative;
+  font-weight: 500;
+  display: inline-block;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.home:hover {
+  color: #ee4d2d;
+}
+
+.aaa {
+  position: relative;
+  border-radius: 90%;
+  min-width: 10px;
+  line-height: 1.2em;
+  padding: 0 3px;
+  text-align: center;
+  border: 2px solid var(--brand-primary-color, #ee4d2d);
+  color: var(--brand-primary-color, #ee4d2d);
+  background-color: #fff;
+  left: -1.1rem;
+  top: -0.7rem;
+  margin-right: -0.875rem;
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 768px) {
+  .logo {
+    width: 100px;
+    margin-left: 0px;
+  }
+
+  .right_nav_links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cart_icon {
+    margin-left: 5px;
+  }
+
+  .link {
+    margin: 2px;
+    font-size: 11px;
+  }
+
+  .home {
+    font-size: 11px;
+    margin-left: 6px;
+    margin-top: 5px;
+  }
+
+  .cart_container {
+    font-size: 24px;
+    margin-left: 0px;
+  }
+
+  .line {
+    margin: 0 3px;
+  }
+
+  .search {
+    font-size: 20px;
+  }
+}

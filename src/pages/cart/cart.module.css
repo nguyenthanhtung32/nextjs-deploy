@@ -1,0 +1,165 @@
+.container {
+  padding: 20px 30px 30px 20px;
+  font-weight: 100;
+  background: white;
+}
+.h1 {
+  font-weight: bolder;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.column_title {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #ccc;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.product {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #ccc;
+  margin-top: 20px;
+  font-weight: normal;
+}
+.product_image {
+  float: left;
+  width: 20%;
+}
+.product_details {
+  float: left;
+  width: 37%;
+}
+.product_price {
+  float: left;
+  width: 12%;
+}
+.product_discount {
+  float: left;
+  width: 10%;
+}
+.product_quantity {
+  float: left;
+  width: 10%;
+}
+.product_removal {
+  float: left;
+  width: 9%;
+}
+.product_line_price {
+  float: left;
+  width: 12%;
+  text-align: right;
+}
+.product_quantity input {
+  width: 40px;
+  text-align: center;
+}
+.totals {
+  margin-bottom: 100px;
+  .totals_item {
+    float: right;
+    clear: both;
+    width: 100%;
+    margin-bottom: 10px;
+
+    .totals_title {
+      float: left;
+      clear: both;
+      width: 79%;
+      text-align: right;
+      font-weight: bold;
+    }
+
+    .totals_value {
+      float: right;
+      width: 21%;
+      text-align: right;
+      font-weight: bold;
+    }
+  }
+}
+
+.checkout {
+  float: right;
+  border: 0;
+  margin-top: 20px;
+  padding: 6px 25px;
+  background-color: rgb(242, 82, 32);
+  color: #fff;
+  font-size: 25px;
+  border-radius: 3px;
+}
+
+.checkout:hover {
+  background-color: rgb(244, 121, 84);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 812px) {
+  .product_image,
+  .product_details,
+  .product_price,
+  .product_discount,
+  .product_quantity,
+  .product_removal,
+  .product_line_price {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin: 10px 2px;
+  }
+  .totals {
+    width: 100%;
+    height: 30px;
+    display: block;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  .checkout {
+    font-size: 10px;
+    padding: 4px 10px;
+  }
+}
+
+@media screen and (max-width: 667px) {
+  .product_image,
+  .product_details,
+  .product_price,
+  .product_discount,
+  .product_quantity,
+  .product_removal,
+  .product_line_price,
+  .totals {
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: xx-small;
+    margin: 10px 2px;
+  }
+  .checkout {
+    font-size: 10px;
+    padding: 4px 10px;
+  }
+}
+
+@media screen and (max-width: 844px) {
+  .product_image,
+  .product_details,
+  .product_price,
+  .product_discount,
+  .product_quantity,
+  .product_removal,
+  .product_line_price,
+  .totals {
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: xx-small;
+    margin: 10px 2px;
+  }
+  .checkout {
+    font-size: 10px;
+    padding: 4px 10px;
+  }
+}
