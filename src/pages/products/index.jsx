@@ -1,6 +1,7 @@
 import React, { useState, memo } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import Image from "next/image";
 import numeral from "numeral";
 import { Button, Card, Col, Input, message, Row } from "antd";
 import { UnorderedListOutlined } from "@ant-design/icons";
@@ -29,7 +30,6 @@ function Products({ products: initialProducts }) {
 
   const [filter, setFilter] = useState(initialState);
   const [products, setProducts] = useState(initialProducts);
-  const [category, setCategory] = useState(_id);
   const [categories, setCategories] = React.useState(initialProducts);
 
   const onChangeFilter = (e) => {
@@ -220,7 +220,7 @@ function Products({ products: initialProducts }) {
                 }}
                 hoverable
                 cover={
-                  <img
+                  <Image
                     alt=""
                     style={{ maxHeight: "250px", objectFit: "contain" }}
                     src={item.img}

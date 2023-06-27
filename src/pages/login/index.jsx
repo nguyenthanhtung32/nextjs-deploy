@@ -1,14 +1,9 @@
 import React, { useState, memo } from "react";
 import Link from "next/link";
-import {
-  SlSocialFacebook,
-  SlSocialGoogle,
-  SlSocialTwitter,
-} from "react-icons/sl";
 import { message } from "antd";
 
 import axios from "../../libraries/axiosClient";
-import styles from "./Login.module.css";
+import styles from "./login.module.css";
 
 function Login() {
   const [email, setEmail] = useState("");
