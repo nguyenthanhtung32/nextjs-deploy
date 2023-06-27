@@ -1,6 +1,5 @@
 import React, { useState, useEffect, memo } from "react";
 import jwt_decode from "jwt-decode";
-import Image from "next/image";
 import numeral from "numeral";
 
 import axios from "../../libraries/axiosClient";
@@ -49,7 +48,7 @@ const PurchaseOrder = () => {
                 {order.orderDetails.map((product) => (
                   <div className={styles.product} key={product.productId}>
                     <div className={styles.product_left}>
-                      <Image
+                      <img
                         alt=""
                         src={product.product.img}
                         width="100px"

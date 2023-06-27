@@ -1,6 +1,5 @@
 import React, { memo } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import numeral from "numeral";
 import { useRouter } from "next/router";
 import jwt_decode from "jwt-decode";
@@ -103,7 +102,7 @@ function Cart() {
                   cart.products.map((product) => (
                     <div class={styles.product} key={product.productId}>
                       <div className={styles.product_image}>
-                        <Image
+                        <img
                           alt=""
                           src={product.product.img}
                           width="50px"

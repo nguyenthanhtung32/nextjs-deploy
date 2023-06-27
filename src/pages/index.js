@@ -1,7 +1,6 @@
 import React, { memo } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
-import Image from "next/image";
 import numeral from "numeral";
 import { Card, Col, Row, Pagination } from "antd";
 
@@ -58,7 +57,7 @@ function Home() {
   return (
     <>
       <div>
-        <Image
+        <img
           style={{ height: "auto", width: "100%" }}
           src="https://lh3.googleusercontent.com/fife/APg5EOY7GY-2BTAXQYPnUJHugyDtF76AWu__t3GOkBgCPLKa5deG3xphC-4ugEDrDjT5SWNyPkCpR86pdKQGQlTL8uAyH4gCn23Utevrqf9Ecve-HDMxpTBo2ekbbSa7dc7qS5kc0IzDfJA92r1scAPal_1i66DMZBa4fR8x1jP0xa_Eatyaj9-3zDRrKvkTres974Nv3Z7QsRXPnVTOuMtmEOMIzvYLndE6achiv3rHEoWr49onWiXFtK7umMDinroX7imyPNn82GhMujscytC109LJ7eqEhmOvp9ansvCWinh6QDt1PoFoNLPDy_krHrmTIJmU6oo1lPmqir1NMzx4-mUC5QTTlKhVrO9Cvu8X1pAY6G0qaoFGtxfHq1uYtyhxiTSlc5D2EFld2UakbKXhhI3xFQxhO3i8Pp_Otr-eF_ajzfDRxEt_W5GqEFRp-UVN39UKgJh0Qt2IcZeALBaNFIiD0JVFQGyr03HBb5P4pqKmhk7Otnjt5RogCBcxRhM-o8Zomrqq_FhmfQMferTjYV6yBhQgW4PGkUCS1SJ5vE2kc1-b468yAMgbnEzvM60k6G0GL05E-N-pcnCGbzB2qcNzLtOIYU20VSG5eLyjIepj4Cy_RAOaN2qdmmtYJIqMr8KbHnpuBvbZ4V2MrnAbvbDYYKfrYClrWZ7xOY0J7j6Qf9jlkQxJ2V_sslAi1Mv2SdhIEfdIOrrwa8P_wEkKiRH4JvEsIeEPqzY-GfMzWttQxIEYt9AlBH9UqJyhuMleORv9kFaTm-GEhuce4p_WUSlmv3sErYDtSGt7xZG_GIsweOrlK4pPztBvtu8jFsl_I85ehU1sZsDgSeKbavIFDH3ITr08LG7lPFEqEUoTQiPGx8GPEMCMh-XQidZIYUiX7XYYVvuIXizThOnbWaGI2tN0a9KxMrYXJTcXeGKKGzRi8BEBOKwS4hgfPLTWpBM1B2EArGUjFdIe92NeTGeIlLm84NQ9LdCVJNws2t_F25rX4BrqLZm81hKFqaCVqoCdwyjNXZbT9KgM3vavifADQb3q00sLd42hu_LFPWTEw9rRABLPv8Q_tdX8NE-3KbhdQNAn_qpgJn191PBKPXGVVv462PUqIS4Bch1W62MovLjKLO1gy5_3AltWQPbdTR_E2dkbjXLnan68KVB3EZucN3LPnnIiRX-80DiTXWiDWHMDYTDXpMa34p_xqbcuG-I-96FuUVIfTjPDYcAMaiRlIRSAJiK-zNS6XieUl4z7-NRNmyP276yjjtR5UMJu05sH3-8EhxpknOAZuv2qaHaG3Kzz8xnXJ85Hf-9W9mCY4pfXUA1ozga8wngBgghj5foMBfoUoe-1aRlyWLtK3P4reftX8L9jjBVAL-xmhXiRP0HTBw341yzhcV7itQ8cbtgVATB46eXoGchZ2iteQbtSJ86HagYnigbaOlL_mvWbNoKmMyCGcnVuV_5mTwENg3yFgD2RtLPiIrYGctlMNEZxcdgeC_wk0SaQvfozCg2n7i1WJk_MA0JMaPaf5yij8UB0HZx_GyMws3tuRX_fLCowgPJVQeJFsRqVXPseYFcrBZtWPtC1ihweHWS1noXJV2l_7NOUANOm-BeDuGfsI1HfYWuS9-0rBF9s-a2IlwT1i0lEECNOjAuNMGKUl2Jl3RRungGciQ9SJIHP4gDMruBV8J362papqH99s0rI8oluhZKsWzN8Np2Ttfs-T9enPlHzixqdHJjZm8unB-S8uELxlRRl5nu5WUEWwJpNSpuc=w1868-h932"
         />
@@ -96,7 +95,7 @@ function Home() {
                       border: "1px solid #ccc",
                     }}
                     cover={
-                      <Image
+                      <img
                         alt=""
                         style={{
                           width: "100%",
@@ -124,7 +123,7 @@ function Home() {
           }}
         >
           <h2 style={{ marginLeft: "10px" }}>
-            <Image src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/fb1088de81e42c4e538967ec12cb5caa.png"></Image>
+            <img src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/fb1088de81e42c4e538967ec12cb5caa.png"></img>
           </h2>
           <Row gutter={[16, 16]} style={{ display: "flex", flexWrap: "wrap" }}>
             {products
@@ -144,7 +143,7 @@ function Home() {
                       style={{ height: "100%", border: "1px solid #ccc" }}
                       hoverable
                       cover={
-                        <Image
+                        <img
                           alt=""
                           style={{
                             width: "100%",

@@ -1,6 +1,5 @@
 import React, { memo } from "react";
 import { useRouter } from "next/router";
-import Image from "next/image";
 import numeral from "numeral";
 import jwt_decode from "jwt-decode";
 import { Input, message } from "antd";
@@ -86,7 +85,7 @@ function BuyNow() {
         {product ? (
           <div class={styles.product} key={product.productId}>
             <div className={styles.product_image}>
-              <Image alt="" src={product.img} width="50px" height="50px" />
+              <img alt="" src={product.img} width="50px" height="50px" />
             </div>
             <div className={styles.product_details}>
               <div className="product_title">{product.name}</div>

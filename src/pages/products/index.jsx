@@ -1,7 +1,6 @@
 import React, { useState, memo } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
-import Image from "next/image";
 import numeral from "numeral";
 import { Button, Card, Col, Input, message, Row } from "antd";
 import { UnorderedListOutlined } from "@ant-design/icons";
@@ -220,7 +219,7 @@ function Products({ products: initialProducts }) {
                 }}
                 hoverable
                 cover={
-                  <Image
+                  <img
                     alt=""
                     style={{ maxHeight: "250px", objectFit: "contain" }}
                     src={item.img}

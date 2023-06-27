@@ -1,6 +1,5 @@
 import React, { memo } from "react";
 import { useRouter } from "next/router";
-import Image from "next/image";
 import jwt_decode from "jwt-decode";
 import numeral from "numeral";
 import { Input, message } from "antd";
@@ -113,7 +112,7 @@ function Order() {
                   return (
                     <div class={styles.product} key={product.productId}>
                       <div className={styles.product_image}>
-                        <Image
+                        <img
                           alt=""
                           src={product.product.img}
                           width="100px"

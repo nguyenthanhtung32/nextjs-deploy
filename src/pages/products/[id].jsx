@@ -1,7 +1,6 @@
 import React, { memo } from "react";
 import numeral from "numeral";
 import { useRouter } from "next/router";
-import Image from "next/image";
 import jwt_decode from "jwt-decode";
 import { message } from "antd";
 
@@ -87,7 +86,7 @@ function ProductDetail(props) {
     <>
       {product ? (
         <div key={product._id} className={styles.product}>
-          <Image className={styles.product_images} alt="" src={product.img}/>
+          <img className={styles.product_images} alt="" src={product.img}></img>
           <div className={styles.product_details}>
             <h2 className={styles.h2}>{product.name}</h2>
             <h3 className={styles.h3}>
