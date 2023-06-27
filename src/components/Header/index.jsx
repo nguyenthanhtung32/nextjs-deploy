@@ -1,6 +1,5 @@
 import React, { useState, memo } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { useRouter } from "next/router";
 import { Menu } from "antd";
 import {
@@ -36,7 +35,7 @@ function Header() {
       <div className={styles.left_nav_links}>
         <div>
           <Link href="/">
-            <Image
+            <img
               className={styles.logo}
               src="https://www.milanoplatinum.com/wp-content/uploads/2015/11/THE-MALL_logo_MilanoPlatinum.png"
               alt="Logo"
